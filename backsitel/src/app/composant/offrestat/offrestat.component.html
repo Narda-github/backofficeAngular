@@ -1,0 +1,16 @@
+<table name="tablstatof" class="table">
+    <tr>
+        <td>ID Offre</td>
+        <td>intitule</td>
+        <td>cout unitaire</td>
+        <td>Vente Total</td>
+        <td>Gain(Ar)</td>
+    </tr>
+    <tr *ngFor="let stato of offrestat">
+        <td>{{stato.idOffre}}</td>
+        <td>{{stato.intitule}}</td>
+        <td>{{stato.coutUnitaire}}</td>
+        <td>{{stato.nbachat}}</td>
+        <td>{{stato.gain}}</td>
+    </tr>
+</table>

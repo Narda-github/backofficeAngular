@@ -1,0 +1,35 @@
+.btn{
+    border:1px solid rgb(45, 63, 63);
+    color:black;
+    background-color: rgb(22, 93, 126);
+    height:100px;
+}
+.btn:hover{
+    background-color: rgb(169, 211, 231);
+    color: white;
+}
+
+
+.btn-lg{
+    display: flex;
+    width:10%;
+}
+.grid-container {
+display: grid;
+grid-template-columns: auto auto auto auto;
+align-content: center;
+background-color: rgb(191, 196, 202);
+}
+.grid-header{
+    display: grid;
+  grid-template-rows: 1/5;
+  background-color: rgb(20, 145, 228);
+  position: fix;
+}
+.title{
+    text-decoration: underline;
+}
+.item-container {
+    display: grid;
+    grid-template-columns: 2em 2em 10fr 2fr 2fr 2fr 2fr 5em 5em;
+}

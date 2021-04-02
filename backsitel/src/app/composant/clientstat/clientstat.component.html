@@ -1,0 +1,19 @@
+<table class="table">
+    <tr>
+        <th class="thead">Compte</th>
+        <th class="thead">Nom</th>
+        <th class="thead">Prénom</th>
+        <th class="thead">Numéro</th>
+        <th class="thead">Date Inscription</th>
+        <th class="thead">Solde S'vola(Ar)</th>
+    </tr>
+    <tr class="tr" *ngFor="let cli of clistat">
+       <td class="td">{{cli.idcompte}}</td>
+       <td class="td">{{cli.nom}}</td> 
+       <td class="td">{{cli.prenom}}</td>
+       <td class="td">{{cli.numero}}</td>
+       <td class="td">{{cli.dateinscrit}}</td>
+       <td class="td">{{cli.solde}}</td>
+    </tr> 
+</table>
+

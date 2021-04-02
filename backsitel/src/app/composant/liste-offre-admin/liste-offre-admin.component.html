@@ -1,0 +1,15 @@
+Liste Offres
+<p *ngIf="offres==='[]'">
+  pas d'offre
+</p>
+<ul *ngFor="let offre of offres">
+    <li>
+      {{offre.idOffre}}
+      {{offre.intitule}} 
+      <span *ngIf="offre.adetail===false">
+       <a [routerLink] = "['/DetailForm']"[queryParams] = "{idOffre : offre.idOffre,idCateg : offre.idCategorie}"><button>Vers details</button></a> 
+      </span>
+      
+    </li>
+</ul>
+

@@ -1,0 +1,16 @@
+<h1>Statistiques</h1>
+<div class="grid-container">
+    <div class="grid-header">
+        <button class="btn" (click)="choose('client')">Voir statistique Clients</button>
+        <button class="btn" (click)="choose('offre')">Voir statistique Offres</button>
+    </div>
+{{message}}
+    <div *ngIf="voir==='client'">
+        <h1 class="title">statistique client</h1>
+        <app-clientstat></app-clientstat>
+    </div>
+    <div *ngIf="voir==='offre'">
+        <h1 class="title">statistique offre</h1>
+        <app-offrestat></app-offrestat>
+    </div>
+</div>

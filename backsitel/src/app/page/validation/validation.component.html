@@ -1,0 +1,10 @@
+<p>validation works!</p>
+<table>
+    <tr *ngFor="let dep of inwait">
+        <td>{{dep.idMvt}}</td>
+        <td>{{dep.idCompte}}</td>
+        <td>{{dep.montant}}</td>
+        <td>{{dep.dateMvt}}</td>
+        <td><button (click)="validation(dep.idMvt)">Valider</button></td>
+    </tr>
+</table>
